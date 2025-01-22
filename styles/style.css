@@ -49,6 +49,7 @@
   font-weight: bold;
   font-size: 14px;
   font-family: Raleway, sans-serif;
+  word-spacing: 2px;
 }
 
 .home-header .search-here-section input {
@@ -92,19 +93,26 @@
 .home-bg .home .content{
   width: 50rem;
   text-align: left;
-  margin-left: 150px;
+  margin-left: 140px;
 }
 .home-bg .home .content h1{
+  font-size: 40px;
   color: white;
   font-family: 'Lora';
+  margin-bottom: 16px;
 }
 .home-bg .home .content .label{
+  font-size: 14px;
   color: white;
   font-family: 'Raleway';
+  margin-bottom: 13px;
 }
 .home-bg .home .content p{
+  font-size: 15px;
   color: white;
   font-family: 'Raleway';
+  margin-bottom: 16px;
+  line-height: 135%;
 }
 .home-btn{
   display: inline-block;
@@ -114,14 +122,13 @@
   cursor: pointer;
   font-family: 'Raleway';
   font-size: 14px;
-  padding: 13px 14px;
+  padding: 14px 20px;
   text-decoration: none;
   color: white;
 }
 .home-btn:hover{
-  background-color: black;
+  background-color: transparent;
 }
-
 
 .bean-header, 
 .bean-header-2 {
@@ -130,45 +137,49 @@
 }
 
 .bean-header {
-  font-family: Railway, sans-serif;
+  font-family: Raleway, sans-serif;
+  margin-top: 60px;
+  color: #275F47;
+  font-size: 19px;
 }
 
 .bean-header-2 {
   font-family: Lora, sans-serif;
+  font-size: 32px;
 }
 
 .bean-container {
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
 .bean-card {
-  width: 300px;
+  width: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .bean-img img {
   width: 200px;
   height: auto;
   border-radius: 50%;
   aspect-ratio: 1/1;
 }
-
 .bean-title {
   font-family: Lora, sans-serif;
+  margin-top: 10px;
 }
-
 .bean-text {
   font-family: Raleway, sans-serif;
+  font-size: 13px;
+  margin-top: 10px;
 }
-
 .bean-title, 
 .bean-text {
   text-align: center;
+  width: 400px;
 }
 
 .service-container {
@@ -176,7 +187,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 85px;
 }
 
 .service-card {
@@ -184,17 +195,21 @@
 }
 
 .service-img {
-  max-width: 300px;
-  height: 350px;
+  width: 340px;
+  height: 400px;
+}
+.service-img:hover{
+  /* transform: translateY(-2px); */
+  cursor: pointer;
 }
 
 .service-btn {
   position: absolute;
   left: 30%;
-  bottom: 20px;
+  bottom: 24px;
   height: auto;
-  width: 140px;
-  padding: 10px 10px;
+  width: 148px;
+  padding: 14px 10px;
   border-radius: 3px;
   font-family: Raleway, sans-serif;
   color: white;
@@ -203,9 +218,32 @@
   transition: all 0.15s;
 }
 
+.pop-title{
+  margin-top: 100px;
+  margin-left: 130px;
+  font-family: 'Lora';
+  font-size: 30px;
+}
+.pop-text{
+  font-family: 'Raleway';
+  margin-left: 130px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.explore-products-btn{
+  margin-left: 130px;
+  background: transparent;
+  border: 1px black solid;
+  padding: 12px 16px;
+  border-radius: 5%;
+  font-family: 'Raleway';
+  margin-top: 30px;
+}
+
 .service-btn:hover {
   transform: scale(1.1);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .popular-container {
