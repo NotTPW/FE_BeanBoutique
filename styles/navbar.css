@@ -1,14 +1,27 @@
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: Lora-Bold;
+  src: url('../fonts/Lora-Bold.ttf');
+}
+
 .nav-container {
   display: flex;
   flex-direction: row;
   flex: 1 1 1;
   background-color: #FAF7F0;
-  height: 60px;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
   /* padding-left: 10px;
   padding-right: 10px; */
-  padding: 0 40px;
+  padding: 0 45px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-container .nav-bar-left ul, .nav-bar-right ul {
@@ -16,7 +29,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  column-gap: 25px;
+  column-gap: 30px;
 }
 
 .nav-container .nav-bar-left ul li,
@@ -29,6 +42,8 @@
 .nav-bar-right a {
   text-decoration: none;
   transition: all 0.15s;
+  font-family: Raleway, sans-serif;
+  color: black;
 }
 
 .nav-container .nav-bar-left a:hover,
@@ -37,6 +52,13 @@
   text-decoration: underline;
 }
 
-.nav-container .nav-bar-logo p {
-  font-size: 1.2rem;
+.nav-bar-logo p{
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+.logo-boutique {
+  font-family: Lora-Bold, serif;
+  font-style: italic;
+  font-weight: 550;
 }
