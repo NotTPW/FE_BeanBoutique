@@ -13,7 +13,7 @@
   flex-direction: row;
   flex: 1 1 1;
   background-color: #FAF7F0;
-  height: 80px;
+  height: 85px;
   justify-content: space-between;
   align-items: center;
   /* padding-left: 10px;
@@ -44,16 +44,17 @@
   transition: all 0.15s;
   font-family: Raleway, sans-serif;
   color: black;
+  font-size: 14px;
 }
 
 .nav-container .nav-bar-left a:hover,
 .nav-bar-right a:hover {
   transform: translateY(-1.5px);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav-bar-logo p{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 550;
 }
 
@@ -61,4 +62,8 @@
   font-family: Lora-Bold, serif;
   font-style: italic;
   font-weight: 550;
+  
+}
+.nav-container .nav-bar-right i{
+  font-size: 25px;
 }
