@@ -311,6 +311,130 @@
   cursor: pointer;
 }
 
+.subscribe{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 3rem;
+  margin-top: 8%;
+  margin-bottom: 6%;
+}
+.sub-img img{
+  width: 350px;
+  height: 430px;
+  border-radius: 10px;
+}
+.sub-text{
+  margin-top: 6%;
+}
+.sub-text h5{
+  font-family: 'Raleway';
+  margin-bottom: 17px;
+  font-size: 14px;
+}
+.sub-text h2{
+  font-family: 'Lora';
+  font-size: 34px;
+  margin-bottom: 18px;
+ }
+.sub-text p{
+  font-family: 'Raleway';
+  margin-bottom: 45px;
+  font-size: 15px;
+}
+.sub-btn{
+  font-family: 'Raleway';
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px black solid;
+  border-radius: 50px;
+  padding: 12px 17px;
+}
+.sub-btn:hover{
+
+}
+
+.team{
+	position: relative;
+	width: 100%;
+	height: 85vh;
+	/* background: radial-gradient(#281c3e,#0f051d); */
+  background-color: #FAF7F0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  margin-bottom: 6%;
+}
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 0.3rem;
+	text-align: center;
+	margin-top: 2.5rem;
+}
+.team-content img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+.center h2{
+  font-family: 'Lora';
+	font-size: 30px;
+  font-weight: bolder;
+	text-align: center;
+  margin-top: 20px;
+}
+.box{
+	padding: 16px;
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 8px;
+  font-family: 'Raleway';
+}
+.box h5{
+  font-family: 'Raleway';
+	font-size: 13px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+  color:#1B4332;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}
+
 .review-container {
   display: flex;
   flex-direction: row;
