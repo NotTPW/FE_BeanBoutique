@@ -63,7 +63,9 @@
   font-family: Lora-Bold, serif;
   font-style: italic;
   font-weight: 550;
-  
+}
+.nav-bar-logo a{
+  text-decoration: none;
 }
 .nav-container .nav-bar-right i{
   font-size: 25px;
