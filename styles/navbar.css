@@ -8,52 +8,54 @@
   src: url('../fonts/Lora-Bold.ttf');
 }
 
+/* Main Navigation Container */
 .nav-container {
   display: flex;
   flex-direction: row;
-  flex: 1 1 1;
+  flex: 1 1 auto;
   background-color: #FAF7F0;
   height: 85px;
   justify-content: space-between;
   align-items: center;
-  /* padding-left: 10px;
-  padding-right: 10px; */
   padding: 0 45px;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.nav-container .nav-bar-left ul, .nav-bar-right ul {
+.nav-bar-left ul,
+.nav-bar-right ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   column-gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-container .nav-bar-left ul li,
+.nav-bar-left ul li,
 .nav-bar-right ul li {
   list-style-type: none;
   font-size: 14px;
 }
 
 .nav-container .nav-bar-left a,
-.nav-bar-right a {
+.nav-container .nav-bar-right a {
   text-decoration: none;
-  transition: all 0.15s;
+  transition: all 0.15s ease-in-out;
   font-family: Raleway, sans-serif;
   color: black;
   font-size: 14px;
 }
 
 .nav-container .nav-bar-left a:hover,
-.nav-bar-right a:hover {
+.nav-container .nav-bar-right a:hover {
   transform: translateY(-1.5px);
   text-decoration: none;
 }
 
-.nav-bar-logo p{
+.nav-bar-logo p {
   font-size: 1.6rem;
   font-weight: 550;
   color: #1B4332;
@@ -64,9 +66,79 @@
   font-style: italic;
   font-weight: 550;
 }
-.nav-bar-logo a{
+
+.nav-bar-logo a {
   text-decoration: none;
 }
-.nav-container .nav-bar-right i{
+
+.nav-container .nav-bar-right i {
   font-size: 25px;
+}
+
+.menu-click {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-click img {
+  width: 30px;
+  height: 30px;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 85px;
+  right: 10px;
+  background-color: #FAF7F0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  padding: 10px 0;
+}
+
+.hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-menu ul li {
+  padding: 10px 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+}
+
+.hamburger-menu ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger-menu ul li a:hover {
+  background-color: #e8e8e8;
+  border-radius: 4px;
+}
+
+@media (max-width: 850px) {
+
+  .nav-bar-left ul,
+  .nav-bar-right ul {
+    display: none;
+  }
+
+  .menu-click {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: none;
+    width: 200px;
+  }
+
+  .menu-click img {
+    background-color: black;
+  }
 }
