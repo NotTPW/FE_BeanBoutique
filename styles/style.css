@@ -397,7 +397,7 @@
   .center h1 {
     font-size: 3.2rem;
   }
-  
+
   .bean-container {
     display: flex;
     flex-direction: row;
@@ -412,9 +412,7 @@
   }
 }
 
-@media (max-width: 750px) {
-  
-}
+
 
 .review-container {
   display: flex;
