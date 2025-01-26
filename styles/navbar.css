@@ -141,6 +141,17 @@
   .menu-click img {
     background-color: black;
   }
+}
 
+#js-add-to-cart-icon {
+  position: relative;
+}
 
+#js-add-to-cart-icon:hover {
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: 25px;
 }

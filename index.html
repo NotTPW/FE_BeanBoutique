@@ -47,7 +47,7 @@
         <li><a href="about.html">ABOUT US</a></li>
         <li><a href="location.html">LOCATION</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
-        <li><i class="bi bi-cart3" id="js-add-to-cart-icon"></i></li>
+        <li><i class="bi bi-cart3" id="js-add-to-cart-icon"></i><span class="cart-count"></span></li>
       </ul>
       <div class="menu-click" id="js-menu-icon"><img src="./img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu"></div>
     </div>
@@ -160,7 +160,7 @@
         <h3 class="popular-title"><span>Black Coffee</span></h3>
         <div class="popular-price-section">
           <p class="popular-price">$12.00</p>
-          <button class="popular-btn">Add to Cart</button>
+          <button class="popular-btn" onclick="addToCart(12)">Add to Cart</button>
         </div>
       </div>
 
@@ -169,7 +169,7 @@
         <h3 class="popular-title"><span>Cream Coffee</span></h3>
         <div class="popular-price-section">
           <p class="popular-price">$20.00</p>
-          <button class="popular-btn">Add to Cart</button>
+          <button class="popular-btn" onclick="addToCart(20)">Add to Cart</button>
         </div>
       </div>
 
@@ -178,7 +178,7 @@
         <h3 class="popular-title"><span>Cappuccino</span></h3>
         <div class="popular-price-section">
           <p class="popular-price">$15.00</p>
-          <button class="popular-btn">Add to Cart</button>
+          <button class="popular-btn" onclick="addToCart(15)">Add to Cart</button>
         </div>
       </div>
 
@@ -187,7 +187,7 @@
         <h3 class="popular-title"><span>Iced Americano</span></h3>
         <div class="popular-price-section">
           <p class="popular-price">$10.99</p>
-          <button class="popular-btn">Add to Cart</button>
+          <button class="popular-btn" onclick="addToCart(10.99)">Add to Cart</button>
         </div>
       </div>
 
@@ -196,7 +196,7 @@
         <h3 class="popular-title"><span>Chocolate Cream Latte</span></h3>
         <div class="popular-price-section">
           <p class="popular-price">$16.00</p>
-          <button class="popular-btn">Add to Cart</button>
+          <button class="popular-btn" onclick="addToCart(16)">Add to Cart</button>
         </div>
       </div>
 
@@ -205,7 +205,7 @@
         <h3 class="popular-title"><span>Black Forest Frappuccino</span></h3>
         <div class="popular-price-section">
           <p class="popular-price">$15.00</p>
-          <button class="popular-btn">Add to Cart</button>
+          <button class="popular-btn" onclick="addToCart(15)">Add to Cart</button>
         </div>
       </div>
 
@@ -288,22 +288,18 @@
       </div>
 
       <div class="review-card">
-        <div>5 star</div>
-        <div>Amazing Coffee</div>
-        <div>
-          * solid coffee. 10/10. highly recommend!
-        </div>
-        <div>
-          the best around the town *
+        <div class="review-star"></div>
+        <div class="review-title"></div>
+        <div class="review-text">
         </div>
 
         <div class="review-slide-container">
-          <div><</div>
+          <div class="left-arrow"><</div>
           <div class="review-person-indicator">
-            <div class="review-person">Tommy</div>
-            <div class="review-counter">02/10</div>
+            <div class="review-person"></div>
+            <div class="review-counter"></div>
           </div>
-          <div>></div>
+          <div class="right-arrow">></div>
         </div>
       </div>
      </div>
