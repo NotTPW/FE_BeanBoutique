@@ -3,8 +3,6 @@ searchBtn.addEventListener('click', () => {
   alert("Don't Try to Search! You have no permission!!!")
 });
 
-<<<<<<< HEAD
-=======
 
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
@@ -23,4 +21,3 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
   });
 });
->>>>>>> 2c03c3916921ed2fae0e23b869ef0faf89fb48a9
