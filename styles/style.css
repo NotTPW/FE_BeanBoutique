@@ -101,6 +101,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100px;
 }
 
 .bean-img img {
@@ -183,12 +184,18 @@
   background: transparent;
   border: 1px black solid;
   padding: 12px 16px;
-  border-radius: 5%;
+  border-radius: 5px;
   font-family: 'Raleway';
   margin-top: 33px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.explore-products-btn:hover {}
+.explore-products-btn:hover {
+  transform: scale(1.05);
+  background-color:#1B4332;
+  color: #fff;
+  cursor: pointer;
+}
 
 .service-btn:hover {
   transform: scale(1.1);
@@ -319,7 +326,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 6%;
+  margin-bottom: 7%;
 }
 
 .team-content {
@@ -416,13 +423,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 14px;
+  margin-bottom: 100px;
 }
 
 .review-img img {
-  width: 250px;
-  height: 350px;
-  border-radius: 10px;
+  width: 260px;
+  height: 380px;
+  border-radius: 15px;
 }
 
 .review-card {
@@ -431,18 +439,27 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(250, 247, 240);
-  width: 500px;
+  width: 600px;
+  border-radius: 15px;
 }
 
 .review-star {
-  color: #000000;
-  margin-bottom: 20px;
+  color: #FFC145;
+  margin-bottom: 30px;
+  font-size: 23px;
 }
 
 .review-title {
   font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-family: 'Lora';
+}
+
+.review-text{
+  font-family: 'Raleway';
+  text-align: center;
   font-size: 20px;
-  margin-bottom: 10px;
 }
 
 .review-slide-container {
@@ -451,7 +468,7 @@
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .review-person-indicator {
@@ -459,10 +476,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Raleway';
 }
 
 .review-person {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -470,8 +488,157 @@
   font-size: 11px;
 }
 
+.left-arrow, .right-arrow {
+  font-weight:bolder;
+  font-size: large;
+}
+
 .left-arrow:hover,
 .right-arrow:hover {
   cursor: pointer;
-  background-color: red;
+  color:#275F47;
+}
+
+.workshops-events {
+  margin: 5rem 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.content {
+  text-align: left;
+  margin-right: 2rem;
+  align-content: center;
+  width: 1500px;
+}
+
+.content h2 {
+  font-size: 29px;
+  font-family: 'Lora';
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 15px;
+  font-family: 'Raleway';
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+  font-family: 'Raleway';
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+  transform: scale(1.05);
+  background-color:#1B4332;
+  color: #fff;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 0.7rem;
+  max-width: 60rem;
+  max-height: 25rem;
+}
+
+.event-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.event-card .event-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.7rem;
+  text-align: left;
+}
+
+.event-card h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'raleway';
+}
+
+.event-card p {
+  margin: 0.5rem 0 0;
+  font-size: 13px;
+  font-family: 'raleway';
+}
+
+.card-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.card-large h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'raleway';
+}
+
+.card-large p{
+  font-size: 15px;
+  font-family: 'raleway';
+}
+
+.card-large img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.event-card:hover img {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-large {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-large {
+    grid-column: span 1;
+    grid-row: auto;
+  }
 }

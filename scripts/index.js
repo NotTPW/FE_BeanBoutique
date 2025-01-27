@@ -28,36 +28,43 @@ const reviews = [
   {
     rating: 5,
     title: "Amazing Coffee",
-    text: "* solid coffee. 10/10. highly recommend! the best around the town *",
+    text: " solid coffee, 10/10, highly recommend ! \n the best around the town ",
     person: "Tommy"
   },
 
   {
     rating: 3,
-    title: "Thet Phoo Wai 2",
-    text: "* solid coffee. 10/10. highly recommend! the best around the town *",
-    person: "Thet Phoo Wai",
-  },
-
-  {
-    rating: 0,
-    title: "Thet Phoo Wai 3",
-    text: "* solid coffee. 10/10. highly recommend! the best around the town *",
-    person: "Naing Ko Ko Lin"
-  },
-
-  {
-    rating: 1,
-    title: "Thet Phoo Wai 4",
-    text: "* solid coffee. 10/10. highly recommend! the best around the town *",
-    person: "Thet Phoo Wai"
+    title: "Good for Takeout",
+    text: "Good coffee but seating is tight. \n Better for takeout than a long stay",
+    person: "Sarah",
   },
 
   {
     rating: 4,
-    title: "Thet Phoo Wai 5",
-    text: "* solid coffee. 10/10. highly recommend! the best around the town *",
-    person: "Naing Ko Ko Lin"
+    title: "Slow Service, Good Mocha",
+    text: "The mocha was rich and flavorful, though \n service was slow during peak hours",
+    person: "Victoria"
+  },
+
+  {
+    rating: 5,
+    title: "Great Coffee, Great Atmosphere",
+    text: "Loved the smooth pour-over and friendly service. \n A great spot to unwind",
+    person: "Henry"
+  },
+
+  {
+    rating: 4,
+    title: "Decent but Lacking Variety",
+    text: "Decent coffee but lacked the wow factor. Limited \n options for non-coffee drinkers",
+    person: "Brian"
+  },
+
+  {
+    rating: 5,
+    title: "A Coffee Lover’s Dream",
+    text: "A gem for coffee lovers! The single-origin espresso was exceptional",
+    person: "Aurora"
   },
 ];
 
@@ -100,6 +107,6 @@ function addToCart(price) {
 }
 
 addToCartIcon.addEventListener('click', () => {
-  alert("Count: " + count + "\nTotal Price: " + totalPrice);
+  alert("Count: " + count + "\nTotal Price: " + "$" +totalPrice);
 });
 
