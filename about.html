@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Home Page</title>
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body>
+  <div class="home-header">
+    <div class="order-now-section">
+      <button>ORDER NOW</button>
+    </div>
+
+    <div class="free-shipping-section">
+      <p>Free FedEx Shipping For Every Orders Over $50</p>
+    </div>
+
+    <div class="search-here-section">
+      <input type="text" placeholder="Search Here">
+      <i class="bi bi-search" id="js-search-icon"></i>
+    </div>
+  </div>
+
+  <!-- Add navigation bar -->
+  <div class="nav-container">
+    <div class="nav-bar-left">
+      <ul>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="menu.html">MENU</a></A></li>
+        <li><a href="event.html">EVENTS</a></li>
+        <li><a href="subscribe.html">SUBSCRIPTION</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-bar-logo">
+      <a href="index.html"><p>B.<span class="logo-boutique">Boutique</span></p></a>
+    </div>
+
+    <div class="nav-bar-right">
+      <ul>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="#">SIGN UP</a></li>
+        <li><i class="bi bi-cart3" id="js-add-to-cart-icon"></i><span class="cart-count"></span></li>
+      </ul>
+      <div class="menu-click" id="js-menu-icon"><i class="bi bi-list"></i></div>
+    </div>
+
+    <div class="hamburger-menu" id="js-hamburger-menu">
+      <ul>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="event.html">EVENTS</a></li>
+        <li><a href="subscribe.html">SUBSCRIPTION</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="#">SIGN UP</a></li>
+      </ul>
+    </div>
+  </div>
+<!-- End of Navigation Bar -->
+
+<!-- Add About Us Section -->
+<section class="about-section">
+    <div class="hero-image">
+        <h1 class="hero-text">ABOUT US</h1>
+    </div>
+
+    <div class="content-container">
+        <!-- Section 1 -->
+        <div class="image-container">
+            <img src="/img/about2.jpg" alt="Coffee Machine">
+        </div>
+        <div class="text-container">
+            <h2>WHERE IT ALL BEGAN</h2>
+            <p>
+                Bean Boutique started as a small neighborhood coffee shop, driven by a passion for exceptional coffee. From sourcing the finest beans to crafting the perfect brew, we’ve built a community of coffee lovers who appreciate quality and warmth in every cup.
+            </p>
+            <a href="#" class="discover-more" onclick="toggleText(event, 'text1')">▼ Discover more</a>
+            <div class="extra-text" id="text1">
+                <h3>WHERE IT ALL BEGAN</h3>
+                <p><strong>📅 8:30 AM, MONDAY, 15TH SEPTEMBER 2010</strong></p>
+                <p>It all started in a cozy corner of our neighborhood, where the aroma of freshly ground coffee filled the air. Our founder, an avid coffee enthusiast, dreamt of a place where people could gather, share stories, and indulge in truly remarkable coffee.<br>
+                    From the first morning brew to the last espresso of the evening, Bean Boutique became a local favorite, known for its rich flavors and warm ambiance. As the years passed, we refined our craft, sourcing the finest beans and perfecting our roasting techniques. Now, we're ready to share our passion with coffee lovers far and wide.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <!-- Section 2 -->
+        <div class="text-container">
+            <h2>OUR MISSION</h2>
+            <p>At Bean Boutique, we believe coffee is more than just a drink—it’s an experience. Our mission is to curate the best coffee blends, provide top-tier brewing equipment, and foster a community where coffee lovers can learn, share, and enjoy. Whether you're a casual drinker or a coffee connoisseur, we have something special for you.</p>
+            <a href="#" class="discover-more" onclick="toggleText(event, 'text2')">▼ Discover more</a>
+            <div class="extra-text" id="text2">
+                <h3>OUR MISSION</h3>
+                <p><strong>☕ Bringing People Together, One Cup at a Time</strong></p>
+                <p>Our commitment goes beyond serving great coffee. We support ethical sourcing, sustainable farming, and education, ensuring that every bean tells a story of craftsmanship and care. Whether you're discovering your first specialty coffee or refining your tasting skills, we’re here to make every experience unforgettable.</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="/img/about4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <!-- Section 3 -->
+        <div class="image-container">
+            <img src="/img/about1.jpg" alt="Coffee Cup">
+        </div>
+        <div class="text-container">
+            <h2>CRAFTING THE PERFECT BREW</h2>
+            <p>Great coffee starts with the right equipment. Whether you prefer an espresso machine, a French press, or a pour-over setup, we offer high-quality brewing tools to help you create café-quality coffee at home. Our expert guides will walk you through the best brewing methods for every blend.</p>
+            <a href="#" class="discover-more" onclick="toggleText(event, 'text3')">▼ Discover more</a>
+            <div class="extra-text" id="text3">
+                <h3>CRAFTING THE PERFECT BREW</h3>
+                <p><strong>🕒 10:00 AM, SUNDAY, 21ST AUGUST 2018</strong></p>
+                <p>Have you ever wondered how temperature affects extraction? Or how grind size changes the flavor of your coffee? Our brewing guides provide step-by-step instructions, helping you master the pour-over, espresso, French press, and more. With our top-tier equipment and expert advice, every cup can be an experience worth savoring.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <!-- Section 4 -->
+        <div class="text-container">
+            <h2>THE BEAN BOUTIQUE EXPERIENCE</h2>
+            <p>Every cup of coffee tells a story. We source our beans ethically from the world’s best coffee-growing regions and roast them to perfection. Our expert baristas craft each cup with care, ensuring a rich and memorable experience.</p>
+            <a href="#" class="discover-more" onclick="toggleText(event, 'text4')">▼ Discover more</a>
+            <div class="extra-text" id="text4">
+                <h3>THE BEAN BOUTIQUE EXPERIENCE</h3>
+                <p><strong>📅 7:15 AM, SATURDAY, 3RD JUNE 2017</strong></p>
+                <p>The moment the first batch of our signature blend was roasted, we knew we had created something special. Our coffee is a journey—from the misty mountains of Colombia to the bustling streets of Ethiopia, we source beans with unique flavor profiles, ensuring a taste that lingers long after your last sip.<br>
+                    Each step, from selecting the beans to the final pour, is handled with precision. Our expert baristas continuously refine their craft, experimenting with new methods and recipes to enhance the coffee experience. Now, we're bringing that same dedication online, so you can enjoy Bean Boutique’s finest blends from anywhere.</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="/img/4821690-hd_2048_1080_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+<!-- End of About Us Section -->
+
+<!-- Add Stay Updated Section -->
+<section class="stay-updated">
+    <div class="content">
+        <h2>STAY UPDATED</h2>
+        <p>Sign up to our plan to get 10% off your first purchase and be the first to hear about exclusive offers and coffee events!</p>
+    </div>
+    <div class="subscribe-box">
+        <input type="email" placeholder="Enter Your Email Address..">
+        <button>SUBSCRIBE</button>
+    </div>
+</section>
+<!-- End of Stay Updated Section -->
+
+<!-- Add Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>LEARN</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="event.html">Workshops & Events</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>SHOP</h3>
+        <ul>
+          <li><a href="menu.html">Coffee</a></li>
+          <li><a href="shop.html">Equipments</a></li>
+          <li><a href="subscribe.html">Subscriptions</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>ACCOUNT</h3>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bean Boutique Co.</p>
+    </div>
+  
+  </footer>
+  <!-- End of Footer Section -->
+  
+    <script src="./scripts/index.js"></script>
+  </body>
+  </html>

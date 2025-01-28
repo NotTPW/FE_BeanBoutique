@@ -3,6 +3,19 @@ searchBtn.addEventListener('click', () => {
   alert("Don't Try to Search! You have no permission!!!")
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  let slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  function changeSlide() {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+  }
+
+  setInterval(changeSlide, 3000); // Change every 5 seconds
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
@@ -111,4 +124,17 @@ addToCartIcon.addEventListener('click', () => {
 });
 
 
+function toggleText(event, textId) {
+  event.preventDefault(); // Prevent default link behavior
 
+  let extraText = document.getElementById(textId);
+  let link = event.target;
+
+  if (extraText.style.display === "none" || extraText.style.display === "") {
+      extraText.style.display = "block";
+      link.innerHTML = "▲ Show less";
+  } else {
+      extraText.style.display = "none";
+      link.innerHTML = "▼ Discover more";
+  }
+}
