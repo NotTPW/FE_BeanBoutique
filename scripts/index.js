@@ -110,3 +110,5 @@ addToCartIcon.addEventListener('click', () => {
   alert("Count: " + count + "\nTotal Price: " + "$" +totalPrice);
 });
 
+
+
