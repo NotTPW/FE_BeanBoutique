@@ -30,8 +30,13 @@
 <div class="nav-container">
   <div class="nav-bar-left">
     <ul>
-      <li><a href="shop.html">SHOP</a></li>
-      <li><a href="menu.html">MENU</a></A></li>
+      <li class="dropdown">
+        <a href="shop.html">SHOP <i class="bi bi-chevron-down"></i></a>
+        <div class="dropdown-content">
+          <a href="menu.html">Coffee Blends</a>
+          <a href="shop.html">Brewing Equipments</a>
+        </div>
+      </li>
       <li><a href="event.html">EVENTS</a></li>
       <li><a href="subscribe.html">SUBSCRIPTION</a></li>
     </ul>
@@ -45,7 +50,7 @@
     <ul>
       <li><a href="about.html">ABOUT US</a></li>
       <li><a href="contact.html">CONTACT US</a></li>
-      <li><a href="#">SIGN UP</a></li>
+      <li><a href="contact.html">LOCATION</a></li>
       <li><i class="bi bi-cart3" id="js-add-to-cart-icon"></i><span class="cart-count"></span></li>
     </ul>
     <div class="menu-click" id="js-menu-icon"><i class="bi bi-list"></i></div>
@@ -53,13 +58,19 @@
 
   <div class="hamburger-menu" id="js-hamburger-menu">
     <ul>
-      <li><a href="shop.html">SHOP</a></li>
+      <li class="dropdown">
+        <a href="shop.html">SHOP <i class="bi bi-chevron-down"></i></a>
+        <div class="dropdown-content">
+          <a href="menu.html">Coffee Blends</a>
+          <a href="shop.html">Brewing Equipment</a>
+        </div>
+      </li>
       <li><a href="menu.html">MENU</a></li>
       <li><a href="event.html">EVENTS</a></li>
       <li><a href="subscribe.html">SUBSCRIPTION</a></li>
       <li><a href="about.html">ABOUT US</a></li>
       <li><a href="contact.html">CONTACT US</a></li>
-      <li><a href="#">SIGN UP</a></li>
+      <li><a href="contact.html">LOCATION</a></li>
     </ul>
   </div>
 </div>
@@ -91,7 +102,7 @@
   </div>
 </div>
 
-<div class="map-container">
+<div id="map-container">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.632009234063!2d-43.36514!3d-22.99663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd57083e0a1f7%3A0xf04c3c5e6b3d7a!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%2C%20Brazil!5e0!3m2!1sen!2sus!4v1706473934860" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
  <!-- End of Contact Us Section -->

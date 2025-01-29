@@ -1,3 +1,28 @@
+// For mobile menu
+document.getElementById('js-menu-icon').addEventListener('click', function() {
+  const hamburgerMenu = document.getElementById('js-hamburger-menu');
+  hamburgerMenu.classList.toggle('active');
+});
+
+// For dropdown in mobile view
+document.querySelectorAll('.dropdown > a').forEach(item => {
+  item.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.querySelector('.dropdown-content').classList.toggle('active');
+    }
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown-content').forEach(content => {
+      content.classList.remove('active');
+    });
+  }
+});
+
 let searchBtn = document.getElementById('js-search-icon');
 searchBtn.addEventListener('click', () => {
   alert("Don't Try to Search! You have no permission!!!")
@@ -157,3 +182,37 @@ function toggleText(event, textId) {
 //       });
 //   }
 // });
+
+
+// menu-script.js
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effect to menu items
+  const menuItems = document.querySelectorAll('.menu-item');
+  
+  menuItems.forEach(item => {
+      item.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+      });
+      
+      item.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+      });
+  });
+
+  // Add animation on scroll
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = 'translateY(0)';
+          }
+      });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.menu-item').forEach(item => {
+      item.style.opacity = 0;
+      item.style.transform = 'translateY(20px)';
+      item.style.transition = 'all 0.4s ease-out';
+      observer.observe(item);
+  });
+});
