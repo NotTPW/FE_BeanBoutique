@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Home Page</title>
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/shop.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body>
+  <div class="home-header">
+    <div class="order-now-section">
+      <button>ORDER NOW</button>
+    </div>
+
+    <div class="free-shipping-section">
+      <p>Free FedEx Shipping For Every Orders Over $50</p>
+    </div>
+
+    <div class="search-here-section">
+      <input type="text" placeholder="Search Here">
+      <i class="bi bi-search" id="js-search-icon"></i>
+    </div>
+  </div>
+
+  <!-- Add navigation bar -->
+  <div class="nav-container">
+    <div class="nav-bar-left">
+      <ul>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="menu.html">MENU</a></A></li>
+        <li><a href="event.html">EVENTS</a></li>
+        <li><a href="subscribe.html">SUBSCRIPTION</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-bar-logo">
+      <a href="index.html"><p>B.<span class="logo-boutique">Boutique</span></p></a>
+    </div>
+
+    <div class="nav-bar-right">
+      <ul>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="#">SIGN UP</a></li>
+        <li><i class="bi bi-cart3" id="js-add-to-cart-icon"></i><span class="cart-count"></span></li>
+      </ul>
+      <div class="menu-click" id="js-menu-icon"><i class="bi bi-list"></i></div>
+    </div>
+
+    <div class="hamburger-menu" id="js-hamburger-menu">
+      <ul>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="event.html">EVENTS</a></li>
+        <li><a href="subscribe.html">SUBSCRIPTION</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="#">SIGN UP</a></li>
+      </ul>
+    </div>
+  </div>
+<!-- End of Navigation Bar -->
+
+<!-- Add Shop Equipment Section -->
+<section class="shop-container">
+    <div class="filter-sidebar">
+        <h3>Filter</h3>
+        <button class="clear-filters">Clear Filters</button>
+        <div class="filter-section">
+            <h4>Categories</h4>
+            <ul>
+                <li><input type="checkbox"> All</li>
+                <li><input type="checkbox"> Grinders</li>
+                <li><input type="checkbox"> Coffee Machines</li>
+                <li><input type="checkbox"> Kettles</li>
+                <li><input type="checkbox"> Drippers</li>
+                <li><input type="checkbox"> Scales</li>
+                <li><input type="checkbox"> Filters</li>
+                <li><input type="checkbox"> Accessories</li>
+            </ul>
+        </div>
+        <div class="filter-section">
+            <h4>Brand</h4>
+            <ul>
+                <li><input type="checkbox"> Hario</li>
+                <li><input type="checkbox"> Breville</li>
+                <li><input type="checkbox"> AeroPress</li>
+                <li><input type="checkbox"> Fellow</li>
+                <li><input type="checkbox"> Chemex</li>
+                <li><input type="checkbox"> Baratza</li>
+                <li><input type="checkbox"> Rancilio</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/img/coffee grinder.jpg" alt="Coffee Grinder">
+            <h2>Precision Coffee Grinder</h2>
+            <p>$129.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/espresso-machine.webp" alt="Espresso Machine">
+            <h2>Barista Espresso Machine</h2>
+            <p>$599.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="img/kettle.jpg" alt="Gooseneck Kettle">
+            <h2>Gooseneck Pour-over Kettle</h2>
+            <p>$79.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/french-press.jpg" alt="French Press">
+            <h2>Stainless Steel French Press</h2>
+            <p>$49.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/drip-coffee-maker.jpg" alt="Drip Coffee Maker">
+            <h2>Drip Coffee Maker</h2>
+            <p>$89.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/coffee-scale.jpg" alt="Coffee Scale">
+            <h2>Precision Coffee Scale</h2>
+            <p>$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/cold-brew-maker.jpg" alt="Cold Brew Coffee Maker">
+            <h2>Cold Brew Coffee Maker</h2>
+            <p>$64.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/coffee-storage.jpg" alt="Airtight Coffee Storage">
+            <h2>Airtight Coffee Storage</h2>
+            <p>$19.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/img/coffee-dripper.webp" alt="Ceramic Coffee Dripper">
+            <h2>Ceramic Coffee Dripper</h2>
+            <p>$29.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</section>
+<!-- End Of Shop Equipment Section -->
+
+<!-- Add Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>LEARN</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="event.html">Workshops & Events</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>SHOP</h3>
+        <ul>
+          <li><a href="menu.html">Coffee</a></li>
+          <li><a href="shop.html">Equipments</a></li>
+          <li><a href="subscribe.html">Subscriptions</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>ACCOUNT</h3>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bean Boutique Co.</p>
+    </div>
+  
+  </footer>
+  <!-- End of Footer Section -->
+  
+   <!-- JavaScript -->
+  <script src="./scripts/index.js"></script>
+  </body>
+  </html>

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slides[index].classList.add("active");
   }
 
-  setInterval(changeSlide, 3000); // Change every 5 seconds
+  setInterval(changeSlide, 2500);
 });
 
 
@@ -138,3 +138,22 @@ function toggleText(event, textId) {
       link.innerHTML = "▼ Discover more";
   }
 }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Clear Filters functionality
+//   const clearFiltersButton = document.querySelector('.clear-filters');
+  
+//   if(clearFiltersButton) {
+//       clearFiltersButton.addEventListener('click', function(e) {
+//           e.preventDefault();
+          
+//           // Select all checkboxes in the filter sidebar
+//           const checkboxes = document.querySelectorAll('.filter-sidebar input[type="checkbox"]');
+          
+//           // Uncheck all checkboxes
+//           checkboxes.forEach(checkbox => {
+//               checkbox.checked = false;
+//           });
+//       });
+//   }
+// });
