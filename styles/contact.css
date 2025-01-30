@@ -1,5 +1,5 @@
 .contact-header {
-    background: url('/img/contact.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/contact.jpg') no-repeat center center/cover;
     color: white;
     padding: 80px 20px;
 }
@@ -10,6 +10,7 @@
 
 .contact-header h2{
     font-family: 'Lora';
+    font-size: 26px;
     margin-bottom: 12px;
     letter-spacing: 3px;
 }

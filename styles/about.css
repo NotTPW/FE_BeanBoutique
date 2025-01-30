@@ -1,5 +1,5 @@
 .hero-image {
-    background: url('/img/about-us-header.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/about-us-header.jpg') no-repeat center center/cover;
     height: 235px;
     display: flex;
     justify-content: center;
