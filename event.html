@@ -79,7 +79,30 @@
   </div>
 <!-- End of Navigation Bar -->
 
+<!-- Add events section -->
+<div class="events-container">
+  <h2> Events & Workshops</h2>
+  <div id="events-list"></div>
+</div>
 
+<!-- Registration Modal -->
+<div id="eventModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Register for Event</h3>
+      <form id="registrationForm">
+          <input type="hidden" id="eventName">
+          <label>Full Name:</label>
+          <input type="text" id="fullName" required>
+          <label>Email:</label>
+          <input type="email" id="email" required>
+          <label>Phone:</label>
+          <input type="tel" id="phone" required>
+          <button type="submit" class="submnit-btn">Submit</button>
+      </form>
+  </div>
+</div>
+<!-- end of events section -->
 
 <!-- Add Footer Section -->
 <footer class="footer">
@@ -131,6 +154,5 @@
   <!-- End of Footer Section -->
   
     <!-- JavaScript -->
-    <script src="./scripts/index.js"></script>
-  </body>
+    <script src="./scripts/event.js"></script>
   </html>

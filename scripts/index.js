@@ -218,4 +218,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//Register Event
