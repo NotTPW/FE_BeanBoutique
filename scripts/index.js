@@ -164,57 +164,8 @@ function toggleText(event, textId) {
   }
 }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   // Clear Filters functionality
-//   const clearFiltersButton = document.querySelector('.clear-filters');
-  
-//   if(clearFiltersButton) {
-//       clearFiltersButton.addEventListener('click', function(e) {
-//           e.preventDefault();
-          
-//           // Select all checkboxes in the filter sidebar
-//           const checkboxes = document.querySelectorAll('.filter-sidebar input[type="checkbox"]');
-          
-//           // Uncheck all checkboxes
-//           checkboxes.forEach(checkbox => {
-//               checkbox.checked = false;
-//           });
-//       });
-//   }
-// });
 
 
-// menu-script.js
-document.addEventListener('DOMContentLoaded', function() {
-  // Add hover effect to menu items
-  const menuItems = document.querySelectorAll('.menu-item');
-  
-  menuItems.forEach(item => {
-      item.addEventListener('mouseenter', function() {
-          this.style.transform = 'translateY(-5px)';
-      });
-      
-      item.addEventListener('mouseleave', function() {
-          this.style.transform = 'translateY(0)';
-      });
-  });
 
-  // Add animation on scroll
-  const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.style.opacity = 1;
-              entry.target.style.transform = 'translateY(0)';
-          }
-      });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.menu-item').forEach(item => {
-      item.style.opacity = 0;
-      item.style.transform = 'translateY(20px)';
-      item.style.transition = 'all 0.4s ease-out';
-      observer.observe(item);
-  });
-});
 
 
