@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 // menu-script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Add hover effect to menu items
@@ -53,3 +52,67 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(item);
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartCountElement = document.querySelector(".cart-count");
+
+    // Update the cart icon with the total number of items
+    function updateCartIcon() {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCountElement.textContent = totalItems > 0 ? totalItems : "0"; 
+    }
+
+    // Function to add item to cart
+    function addToCart(item) {
+        const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name);
+        if (existingItemIndex !== -1) {
+            // If the item already exists, increase its quantity
+            cart[existingItemIndex].quantity += 1;
+        } else {
+            // Otherwise, add a new item to the cart
+            cart.push(item);
+        }
+
+        // Save the cart back to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartIcon();
+    }
+
+    // Attach "Add to Cart" functionality to buttons
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const menuItem = this.closest(".menu-item"); // Find the parent menu item container
+            const itemName = menuItem.querySelector(".item-header h2").textContent;
+            const itemPrice = parseFloat(menuItem.querySelector(".price").textContent.replace("$", ""));
+            const itemImage = menuItem.querySelector(".item-image img").src;
+
+            // Create an item object
+            const item = {
+                name: itemName,
+                price: itemPrice,
+                image: itemImage,
+                quantity: 1,
+            };
+
+            // Add the item to the cart
+            addToCart(item);
+
+            // Show confirmation alert
+            alert(`${itemName} has been added to your cart!`);
+        });
+    });
+
+    // Initialize the cart count display
+    updateCartIcon();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cartIcon = document.getElementById("js-add-to-cart-icon");
+
+    // Add click event listener to the cart icon
+    cartIcon.addEventListener("click", function () {
+        window.location.href = "cart.html"; // Redirect to the cart page
+    });
+});

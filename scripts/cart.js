@@ -61,18 +61,49 @@ document.addEventListener("DOMContentLoaded", function () {
         cartCount.textContent = totalItems > 0 ? totalItems : "";
     }
 
-    checkoutButton.addEventListener("click", function () {
-        if (cart.length === 0) {
-            alert("Your cart is empty.");
-        } else {
-            alert("Proceeding to checkout...");
-            cart = [];
-            localStorage.setItem("cart", JSON.stringify(cart));
-            updateCartDisplay();
-            updateCartIcon();
-        }
-    });
-
     updateCartDisplay();
     updateCartIcon();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const checkoutButton = document.getElementById("btn-checkout");
+    const modal = document.getElementById("checkout-modal");
+    const closeModalButton = document.getElementById("close-modal");
+    const closeButton = document.getElementById("close-button");
+
+    checkoutButton.addEventListener("click", function () {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        if (cart.length === 0) {
+            alert("Your cart is empty. Add items before checkout.");
+            return;
+        }
+
+        // Clear the cart
+        localStorage.setItem("cart", JSON.stringify([]));
+
+        // Show the modal
+        modal.classList.add("show");
+
+        // Update the cart display and icon
+        const cartContainer = document.getElementById("cart-items");
+        const subtotalElement = document.getElementById("subtotal");
+        const taxElement = document.getElementById("tax");
+        const totalElement = document.getElementById("total");
+        cartContainer.innerHTML = "<p class='text-center'>Your cart is empty.</p>";
+        subtotalElement.textContent = "$0.00";
+        taxElement.textContent = "$0.00";
+        totalElement.textContent = "$0.00";
+        const cartCount = document.querySelector(".cart-count");
+        cartCount.textContent = "";
+    });
+
+    closeModalButton.addEventListener("click", function () {
+        modal.classList.remove("show");
+    });
+
+    closeButton.addEventListener("click", function () {
+        modal.classList.remove("show");
+    });
+});
+
+

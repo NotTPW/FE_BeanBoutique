@@ -419,7 +419,6 @@
   position: relative;
   width: 100%;
   height: 85vh;
-  /* background: radial-gradient(#281c3e,#0f051d); */
   background-color: #FAF7F0;
   display: flex;
   align-items: center;
@@ -742,3 +741,17 @@
   }
 }
 
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.cart-count {
+  background: #275F47;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+}

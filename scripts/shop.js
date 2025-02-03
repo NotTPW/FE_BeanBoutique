@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateCartCount() {
         let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-        cartCount.textContent = totalItems > 0 ? totalItems : "";
+        cartCount.textContent = totalItems > 0 ? totalItems : "0"; // Ensure it always shows "0" if empty
     }
 
     function saveCart() {
@@ -46,5 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "cart.html"; // Redirect to Cart Page
     });
 
+    // Ensure the cart count always shows "0" if the cart is empty
     updateCartCount();
 });
+
