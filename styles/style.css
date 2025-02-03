@@ -220,7 +220,6 @@
 }
 
 .service-img:hover {
-  /* transform: translateY(-2px); */
   cursor: pointer;
 }
 
@@ -379,9 +378,7 @@
 }
 
 .sub-btn {
-  text-decoration: none;
   border: 1px solid #333;
-  color: #333;
   padding: 10px 20px;
   border-radius: 25px;
   position: relative;
@@ -391,6 +388,11 @@
   font-family: 'raleway';
   font-size: 13px;
   cursor: pointer;
+}
+
+.sub-btn a{
+  text-decoration: none;
+  color: #333;
 }
 
 .sub-btn::before {
@@ -409,7 +411,7 @@
 .sub-btn:hover::before {
   transform: translateX(0);
 }
-.sub-btn:hover {
+.sub-btn a:hover {
   color: #fff;
 }
 
