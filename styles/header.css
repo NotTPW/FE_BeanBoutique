@@ -26,7 +26,7 @@
   height: 65px;
 }
 
-.home-header .order-now-section button {
+.home-header .order-now-section .head-btn {
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -43,7 +43,7 @@
   text-decoration: none;
 }
 
-.home-header .order-now-section button:hover {
+.home-header .order-now-section .head-btn:hover {
   transform: translateY(-1.5px);
   font-weight: 700;
   cursor: pointer;
