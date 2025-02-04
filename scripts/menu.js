@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const cartCountElement = document.querySelector(".cart-count");
 
-    // Update the cart icon with the total number of items
     function updateCartIcon() {
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         cartCountElement.textContent = totalItems > 0 ? totalItems : "0"; 
@@ -88,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemPrice = parseFloat(menuItem.querySelector(".price").textContent.replace("$", ""));
             const itemImage = menuItem.querySelector(".item-image img").src;
 
-            // Create an item object
             const item = {
                 name: itemName,
                 price: itemPrice,
@@ -96,23 +94,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 quantity: 1,
             };
 
-            // Add the item to the cart
             addToCart(item);
 
-            // Show confirmation alert
             alert(`${itemName} has been added to your cart!`);
         });
     });
 
-    // Initialize the cart count display
     updateCartIcon();
 });
 
 document.addEventListener("DOMContentLoaded", function () {
     const cartIcon = document.getElementById("js-add-to-cart-icon");
 
-    // Add click event listener to the cart icon
     cartIcon.addEventListener("click", function () {
-        window.location.href = "cart.html"; // Redirect to the cart page
+        window.location.href = "cart.html"; 
     });
 });

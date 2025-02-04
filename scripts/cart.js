@@ -78,13 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Clear the cart
         localStorage.setItem("cart", JSON.stringify([]));
 
-        // Show the modal
         modal.classList.add("show");
 
-        // Update the cart display and icon
         const cartContainer = document.getElementById("cart-items");
         const subtotalElement = document.getElementById("subtotal");
         const taxElement = document.getElementById("tax");

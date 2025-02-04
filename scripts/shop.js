@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const clearFiltersBtn = document.querySelector(".clear-filters"); // Select the Clear Filters button
-    const checkboxes = document.querySelectorAll(".filter-sidebar input[type='checkbox']"); // Select all checkboxes
+    const clearFiltersBtn = document.querySelector(".clear-filters"); 
+    const checkboxes = document.querySelectorAll(".filter-sidebar input[type='checkbox']"); 
 
     clearFiltersBtn.addEventListener("click", function () {
         checkboxes.forEach(checkbox => {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateCartCount() {
         let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-        cartCount.textContent = totalItems > 0 ? totalItems : "0"; // Ensure it always shows "0" if empty
+        cartCount.textContent = totalItems > 0 ? totalItems : "0"; 
     }
 
     function saveCart() {
@@ -43,10 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     cartIcon.addEventListener("click", function () {
-        window.location.href = "cart.html"; // Redirect to Cart Page
+        window.location.href = "cart.html"; 
     });
 
-    // Ensure the cart count always shows "0" if the cart is empty
     updateCartCount();
 });
 
