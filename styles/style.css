@@ -202,6 +202,102 @@
   width: 400px;
 }
 
+@media (max-width: 1024px) {
+  .bean-header {
+    font-size: 17px;
+  }
+
+  .bean-header-2 {
+    font-size: 28px;
+  }
+
+  .bean-container {
+    justify-content: space-around;
+  }
+
+  .bean-card {
+    width: 200px;
+  }
+
+  .bean-img img {
+    width: 180px;
+  }
+
+  .bean-title {
+    font-size: 18px;
+  }
+
+  .bean-text {
+    font-size: 12px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bean-header {
+    font-size: 16px;
+  }
+
+  .bean-header-2 {
+    font-size: 26px;
+  }
+
+  .bean-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bean-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .bean-img img {
+    width: 160px;
+  }
+
+  .bean-title {
+    font-size: 16px;
+  }
+
+  .bean-text {
+    font-size: 12px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bean-header {
+    font-size: 14px;
+  }
+
+  .bean-header-2 {
+    font-size: 22px;
+  }
+
+  .bean-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bean-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .bean-img img {
+    width: 140px;
+  }
+
+  .bean-title {
+    font-size: 15px;
+  }
+
+  .bean-text {
+    font-size: 11px;
+  }
+}
+
 .service-container {
   display: flex;
   flex-direction: row;

@@ -1,3 +1,7 @@
+document.getElementById('js-menu-icon').addEventListener('click', () => {
+    const menu = document.getElementById('js-hamburger-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
 document.addEventListener("DOMContentLoaded", function () {
     const events = [
         {
