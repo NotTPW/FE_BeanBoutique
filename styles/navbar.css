@@ -62,7 +62,7 @@
 /* Mobile dropdown handling */
 @media (max-width: 768px) {
   .dropdown-content {
-    position: static;
+    position: absolute;
     display: none;
     box-shadow: none;
     padding-left: 20px;

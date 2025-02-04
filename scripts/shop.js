@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const cartCount = document.querySelector(".cart-count");
     const cartIcon = document.querySelector("#js-add-to-cart-icon");
 
+    document.getElementById('js-menu-icon').addEventListener('click', () => {
+        const menu = document.getElementById('js-hamburger-menu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
+
     function updateCartCount() {
         let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         cartCount.textContent = totalItems > 0 ? totalItems : "0"; 

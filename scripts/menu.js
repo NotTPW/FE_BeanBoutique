@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    document.getElementById('js-menu-icon').addEventListener('click', () => {
+        const menu = document.getElementById('js-hamburger-menu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
 });
 
 // menu-script.js
