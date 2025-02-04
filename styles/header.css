@@ -38,11 +38,15 @@
   font-family: 'Raleway';
 }
 
+.home-header .order-now-section a{
+  color: white;
+  text-decoration: none;
+}
+
 .home-header .order-now-section button:hover {
   transform: translateY(-1.5px);
   font-weight: 700;
   cursor: pointer;
-  /* TODO: change color when needed */
 }
 
 .home-header .free-shipping-section {
